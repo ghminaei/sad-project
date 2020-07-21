@@ -1,0 +1,260 @@
+{
+	"Patient" : [
+		{
+			"name" : "sepi",
+			"family" : "rahimian",
+			"id" : 1,
+			"username" : "sepi",
+			"gender" : "female",
+			"phone" : "0910",
+			"pass" : "123",
+			"age" : 12,
+			"disease" : "blood_cancer",
+			"insurance" : {
+				"insuranceId" : 5,
+				"type" : "iran",
+				"ceil" : 90000,
+				"rate" : 0.8
+			},
+			"prescription" : [1, 2, 3]
+		},
+		{
+			"name" : "sara",
+			"family" : "tavakoli",
+			"id" : 2,
+			"username" : "sara",
+			"gender" : "female",
+			"phone" : "0911",
+			"pass" : "345",
+			"age" : 22,
+			"disease" : "flew",
+			"insurance" : {
+		 		"insuranceId" : 7,
+ 				"type" : "tamin_ejtemaii",
+ 				"ceil" : 60000,
+ 				"rate" : 0.5
+			},
+			"prescription" : [2, 3, 4]
+		},
+		{
+			"name" : "ghazal",
+			"family" : "minaei",
+			"id" : 3,
+			"username" : "ghaz",
+			"gender" : "female",
+			"phone" : "0911",
+			"pass" : "567",
+			"age" : 31,
+			"disease" : "anemia",
+			"insurance" : {
+ 				"insuranceId" : 6,
+	 			"type" : "alborz",
+	 			"ceil" : 90000,
+	 			"rate" : 0.7
+			},
+			"prescription" : [1, 2, 4]
+		}
+	],
+	"Test" : [
+		{
+			"id" : 1,
+			"description" : "CBC",
+			"basePrice" : 20000,
+			"preCondition" : {
+					"suitableTime" : "Morning",
+					"patientPrepare" : "none"
+					}
+		},
+		{
+			"id" : 2,
+			"description" : "HDL",
+			"basePrice" : 30000,
+			"preCondition" : {
+					"suitableTime" : "Noon",
+					"patientPrepare" : "fasting"
+					}
+		},
+		{
+			"id" : 3,
+			"description" : "PV",
+			"basePrice" : 20000,
+			"preCondition" : {
+					"suitableTime" : "Morning",
+					"patientPrepare" : "fasting"
+					}
+		},
+		{
+			"id" : 4,
+			"description" : "EI",
+			"basePrice" : 10000,
+			"preCondition" : {
+					"suitableTime" : "Noon",
+					"patientPrepare" : "none"
+					}
+		},
+		{
+			"id" : 5,
+			"description" : "AM",
+			"basePrice" : 15000,
+			"preCondition" : {
+					"suitableTime" : "",
+					"patientPrepare" : "none"
+					}
+		}
+	],
+	"Insurance" : [
+		{
+			"insuranceId" : 5,
+			"type" : "iran",
+			"ceil" : 90000,
+			"rate" : 0.8
+		},
+		{
+			"insuranceId" : 6,
+			"type" : "alborz",
+			"ceil" : 90000,
+			"rate" : 0.7
+	   	},
+ 		{
+			"insuranceId" : 7,
+			"type" : "tamin_ejtemaii",
+			"ceil" : 60000,
+			"rate" : 0.5
+	   }
+	],
+	"Tester" : [
+		{
+			"name" : "docSepi",
+			"family" : "rahimian",
+			"id" : 7,
+			"gender" : "female",
+			"phone" : "0911",
+			"available_time" : [1, 3, 5, 7, 9, 11]	
+		},
+		{
+			"name" : "docSara",
+			"family" : "tavakoli",
+			"id" : 8,
+			"gender" : "female",
+			"phone" : "0911",
+			"available_time" : [2, 4, 6, 8, 10]
+		}
+	],
+	"Labratory" : [
+		{
+			"id" : 91,
+			"name" : "razi",
+			"testers": [7],
+			"availableTests" : [1, 2, 3, 4],
+			"priceRate" : 1.2
+		},
+		{
+			"id" : 92,
+			"name" : "sina",
+			"testers" : [8],
+			"availableTests" : [2, 3, 4, 5],
+			"priceRate" : 1.4
+		}
+	],
+	"TimeSlot" : [
+		{
+			"id" : 1,
+			"start" : 8,
+			"end" : 10,
+			"year" : 1399,
+			"month" : 5,
+			"day": 10,
+			"status": "Available"
+		},
+		{
+			"id" : 2,
+			"start" : 9,
+			"end" : 11,
+			"year" : 1399,
+			"month" : 5,
+			"day" : 11,
+			"status": "Available"
+		},
+		{
+			"id" : 3,
+			"start" : 11,
+			"end" : 13,
+			"year" : 1399,
+			"month" : 5,
+			"day" : 12,
+			"status": "Available"
+		},
+		{
+			"id" : 4,
+			"start" : 8,
+			"end" : 10,
+			"year" : 1399,
+			"month" : 5,
+			"day" : 13,
+			"status": "Available"
+		},
+		{
+			"id" : 5,
+			"start" : 9,
+			"end" : 11,
+			"year" : 1399,
+			"month" : 5,
+			"day" : 14,
+			"status": "Available"
+		},
+		{
+			"id" : 6,
+			"start" : 8,
+			"end" : 10,
+			"year" : 1399,
+			"month" : 5,
+			"day" : 15,
+			"status": "Available"
+		},
+		{
+			"id" : 7,
+			"start" : 13,
+			"end" : 15,
+			"year" : 1399,
+			"month" : 5,
+			"day" : 16,
+			"status": "Available"
+		},
+		{
+			"id" : 8,
+			"start" : 11,
+			"end" : 13,
+			"year" : 1399,
+			"month" : 5,
+			"day" : 17,
+			"status": "Available"
+		},
+		{
+			"id" : 9,
+			"start" : 13,
+			"end" : 15,
+			"year" : 1399,
+			"month" : 5,
+			"day" : 18,
+			"status": "Available"
+		},
+		{
+			"id" : 10,
+			"start" : 9,
+			"end" : 11,
+			"year" : 1399,
+			"month" : 5,
+			"day" : 19,
+			"status": "Available"
+		},
+		{
+			"id" : 11,
+			"start" : 8,
+			"end" : 10,
+			"year" : 1399,
+			"month" : 5,
+			"day" : 20,
+			"status": "Available"
+		}
+	]
+}
